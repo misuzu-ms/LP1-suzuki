@@ -13,16 +13,17 @@ body {
   color: #000;
 }
 
-.top-wrap {
-  max-width: 1400px;
-}
-
 .top-wrap.__bg {
   background-image: url("../img/stripe.png");
-  background-size: 100% auto;
+  background-size: 100%;
   background-position: 50%;
   position: relative;
   background-color: #3480E9;
+  width: 100%;
+}
+
+.top-wrap {
+  max-width: 1400px;
 }
 
 .top-wrap__center {
@@ -74,25 +75,26 @@ body {
 
 .top-wrap__center__com {
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-top: -0.1%;
 }
 
 .top-wrap__con__btn {
-  margin-top: 1%;
   display: inline-block;
-  padding: 12px 30px;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
   background-color: #ff4a3b;
-  border: none;
-  border-radius: 28px;
+  border: unset;
+  border-radius: 50px;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
   cursor: pointer;
   box-shadow: 4px 3px 7px rgb(0 0 0 / 40%);
+  line-height: 3.3;
+  width: 25%;
+  margin: 1% auto;
 }
 
 .top-wrap__con__btn:hover {
@@ -126,49 +128,72 @@ justify-content: center;
 .com-wrap__body__block__img {
   position: absolute;
     margin-top: 1.7%;
-  
 }
 
-.com-wrap__body__block__txt {
+.com-wrap__body__block__mes {
 position: absolute;
 margin-top: 12.5%;
 font-weight: bold;
 text-align: center;
-line-height: 3;
 }
 
-.com-wrap__body__block__img2 {
+.com-wrap__body__block__ttl {
   position: absolute;
-  margin-top: 15.4%;
+  color: #D61548;
+  margin-top: 12.5%
+  
+}
+
+.com-wrap__body__block__ttl h2 {
+  font-size: 33px;
+}
+
+.marker {
+  background: linear-gradient(transparent 60%, #fff94e 60%);
+  
+}
+
+.com-wrap__body__block__ttl h2 span {
+  color: #D61548;
+  font-size: 65px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 2px 3px 3px #808080;
+  
+}
+
+.com-wrap__body__block__com {
+  position: absolute;
+  font-weight: bold;
+  margin-top:22.5%
 }
 
 .com-wrap__body__block__box {
   position: absolute;
   max-width: 800px;
   display: flex;
-  margin-left: -90px;
+  margin-left: 10px;
+  margin-top: 353px;
   flex-wrap: nowrap
   
 }
 
 .com-wrap__body__block__box img {
   width: 21%;
-  padding-top: 340px;
-  margin-right: 20px;
+
 }
 
 .com-wrap__body__block2__box {
   position: absolute;
-  max-width: 800px;
-  display: flex;
-  margin-left: -90px;
-  flex-wrap: nowrap
+    max-width: 800px;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 408px;
+    flex-wrap: nowrap
 }
 
 .com-wrap__body__block2__box img {
   width: 21%;
-  padding-top: 405px;
-  margin-right: 20px;
 }
 
 .com-wrap__body__block__box__ill{
@@ -238,21 +263,23 @@ width: 100%;
 
 .jun-wrap__con {
   display: flex;
-    justify-content: space-between;
-    text-align: center;
+  justify-content: space-evenly;
+    align-items: center;
     margin-top: 2.5%;
-    margin-left: 180px;
-    margin-right: 180px;
-}
+    margin-left: 5%;
+    margin-right: 5%;
+    }
 
 .jun-wrap__con__block__head {
   color: #0549A8;
   margin-bottom: 3px;
   font-size: 19px;
+  text-align: center;
 }
 
 .jun-wrap__con__block2 {
 margin-bottom: 50px;
+margin-top: 2%;
 }
 
 .fea {
@@ -266,7 +293,7 @@ display: flex;
   margin-top: 4%;
   margin-left: 180px;
     margin-right: 180px;
-    padding-bottom: 50px;
+    padding-bottom: 4%;
 }
 
 .fea-wrap__con__block:nth-of-type(2n) {
@@ -324,12 +351,53 @@ position: relative;
   background-color: #E7E8E8;
 }
 
-.faq-wrap__ttl {
+.faq-wrap__inner__block {
   text-align: center;
 }
 
-.faq-wrap__ttl__img {
-padding-top: 56px;
+.faq-wrap__ttl__box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 4%;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #3480E9;
+  border: solid 4px #000;
+  margin: 0 6px;
+  text-align: center;
+    line-height: 85px;
+    font-size: 4rem;
+}
+
+.circle__circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #15C6E5;
+  border: solid 4px #000;
+  margin: 0 6px;
+  text-align: center;
+    line-height: 85px;
+    font-size: 4rem;
+}
+
+.circle span {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.circle__circle span {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq-wrap__ttl__box p {
+  font-size: 2.5rem;
 }
 
 .s-ttl3 {
@@ -341,13 +409,13 @@ padding-top: 56px;
 
 .faq-wrap__ttl__illu__img {
   margin-left: 700px;
-  margin-top: -132px;
+  margin-top: -125px;
 }
 
 .faq-wrap__con {
   width: 74.3%;
   margin: 0 auto;
-  margin-top: -53px;
+  margin-top: -51px;
 }
 
 .faq-wrap__con__block {
@@ -472,6 +540,7 @@ background-color: #ABE0E2;
 
 .con-wrap__con__form__block__btn button:hover {
   background-color: #ff6f61;
+  transform: scale(1.05);
 }
 
 .jun-wrap__ttl2 p {
