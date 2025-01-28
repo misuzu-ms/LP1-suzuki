@@ -335,7 +335,7 @@ position: relative;
 .s-ttl__2::after {
   content: "";
   display: block;
-  width: 320px;
+  width: 277px;
   height: 3px;
   position: absolute;
   bottom: 1.5rem;
